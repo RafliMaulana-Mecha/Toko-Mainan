@@ -113,3 +113,9 @@ Folder `target/` dihasilkan otomatis oleh Maven dan sebaiknya tidak ikut di-comm
 ```
 target/
 ```
+
+## Tampilan Aplikasi
+<img width="1028" height="844" alt="image" src="https://github.com/user-attachments/assets/300a6efe-3b87-44c3-9612-6feb7f18a349" />
+
+<img width="1028" height="844" alt="image" src="https://github.com/user-attachments/assets/abc19bdf-c2b5-4404-9034-1f7cca1916a1" />
+
