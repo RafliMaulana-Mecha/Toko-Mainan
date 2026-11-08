@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DetailController" stylesheets="@styles/app.css">
+    <top>
+        <HBox styleClass="header" spacing="16">
+            <Label text="Detail Produk" styleClass="title"/>
+            <Button text="Lihat Daftar" onAction="#bukaDaftar"/>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true">
+            <content>
+                <VBox styleClass="page" spacing="16">
+                    <HBox styleClass="card" spacing="28">
+                        <ImageView fx:id="gambarView" fitWidth="420" fitHeight="320" preserveRatio="true"/>
+                        <VBox spacing="10" HBox.hgrow="ALWAYS">
+                            <Label text="Kode" styleClass="muted"/>
+                            <Label fx:id="kodeLabel" styleClass="subtitle"/>
+                            <Label text="Nama produk" styleClass="muted"/>
+                            <Label fx:id="namaLabel" wrapText="true" styleClass="subtitle"/>
+                            <Label text="Kategori" styleClass="muted"/>
+                            <Label fx:id="kategoriLabel"/>
+                            <Label text="Harga" styleClass="muted"/>
+                            <Label fx:id="hargaLabel" styleClass="title"/>
+                            <Label fx:id="pesanLabel" wrapText="true"/>
+                            <Button text="Tambah Produk Lain" onAction="#tambahLagi" styleClass="button-primary"/>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
